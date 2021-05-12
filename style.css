@@ -1,0 +1,408 @@
+:root {
+  --bg: #ffffff;
+  --text: #313336;
+  --highlight: #f0f1f2;
+  --text-light: #a4adb8;
+}
+
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+    sans-serif;
+  color: var(--text);
+  font-size: 2rem;
+  background-color: var(--bg);
+}
+
+.logo {
+  color: var(--text);
+}
+
+form input {
+  outline-color: #22242581;
+  border-style: solid;
+  background-color: var(--highlight);
+  border-color: var(--highlight);
+  border-radius: 0.2rem;
+}
+
+.todo-button {
+  border-style: solid;
+  background-color: var(--highlight);
+  border-color: var(--highlight);
+  border-radius: 0.2rem;
+  color: var(--text-light);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+form input,
+.todo-button {
+  padding: 0.3rem;
+  font-size: 1rem;
+  color: var(--text);
+  margin-left: 0.6rem;
+}
+
+.todo-button {
+  color: var(--text-light);
+}
+
+.todo-button:active {
+  font-size: 0.97rem;
+  color: rgba(92, 156, 245, 0.5);
+  padding: 4.8px;
+  padding-left: 4.5px;
+  padding-right: 5.5px;
+}
+
+.inboxIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.complete-button {
+  padding-right: 0.2rem;
+  background: var(--highlight);
+  border: none;
+  border-radius: 0.3rem;
+  transition: transform 235ms;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tash-button {
+  border: none;
+  background: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.actualTodoList {
+  min-width: 50vh;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 10rem;
+  overflow: hidden;
+}
+
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+/* ANIMATIONS */
+
+.todo {
+  padding: 0.5rem;
+  margin: 0.65rem;
+  border-radius: 0.3rem;
+  background-color: var(--highlight);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1.1s cubic-bezier(0.82, 0.21, 0.04, 0.94) 0s;
+}
+
+.fallllll {
+  transform: translateY(10rem) rotateZ(10deg);
+  opacity: 0%;
+  z-index: 100;
+}
+
+.todo li {
+  display: flex;
+  flex: 1;
+}
+
+.complete-button:hover {
+  transform: translateY(-1.5px);
+  background-image: url(./assets/checkbox@2.png);
+}
+
+.un-named-todo {
+  color: #a4afb6;
+}
+
+.todo-item {
+  font-size: 1.2rem;
+  padding-bottom: 0.148rem;
+}
+
+.inbox-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+.tip {
+  padding: 1.6rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #a7abb9bd;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- */
+
+.toggleOff {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.toggleOffOff {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.toggleOnOn {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.toggleOn {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.nonScrollable {
+  overflow: hidden;
+}
+
+.addButton {
+  padding-right: 0.2rem;
+  background: none;
+  border: none;
+  border-radius: 0.3rem;
+  transition: transform 235ms;
+  cursor: pointer;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+.addButton:active {
+  position: absolute;
+  bottom: 24px;
+  right: 25px;
+}
+
+.tipMobile {
+  display: block;
+}
+
+.tipDesktop {
+  padding: 2rem;
+  display: none;
+}
+
+.btnImg {
+  pointer-events: none;
+}
+
+.checkedTodoList {
+  min-width: 50vh;
+  padding: 0.5rem;
+}
+
+.logbook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logbooksec {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1b1d21;
+}
+
+.checkedTodoList {
+  min-width: 50vh;
+  padding-bottom: 10rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: hidden;
+}
+
+.checked-todo {
+  background-color: #2f35418a;
+  padding-left: 1rem;
+  color: #ffffff;
+  /* text-decoration: line-through; */
+  /* opacity: 50%; */
+}
+
+.check-tos-button {
+  display: none;
+}
+
+.inLOG {
+  color: #f0f1f2;
+  font-size: 4rem;
+  padding: 2rem;
+  /* padding-right: 80vw; */
+}
+
+.imgOOo {
+  height: 100px;
+  width: auto;
+}
+
+.imgOO {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inLOG {
+  display: none;
+}
+
+.NoLog {
+  color: #f0f1f2;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  padding-top: 30%;
+}
+
+.easterEgg {
+  height: 100vh;
+  width: 100vw;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.egg {
+  height: 100vh;
+}
+
+.wampppp {
+  padding: 2rem;
+  height: 400px;
+}
+.cattt {
+  height: 250px;
+  padding-top: 2rem;
+}
+
+.checkedTodoList {
+  display: none;
+}
+
+@media (min-width: 620px) {
+  .addButton {
+    display: none;
+  }
+
+  .tipMobile {
+    display: none;
+  }
+
+  .tipDesktop {
+    display: block;
+  }
+
+  .NoLog {
+    display: none;
+  }
+
+  .inLOG {
+    display: block;
+  }
+
+  .checkedTodoList {
+    display: block;
+  }
+}
